@@ -8,6 +8,9 @@ public class LoadPuzzleGame : MonoBehaviour
     [SerializeField]
     private PuzzleGameManager puzzleGameManager;
 
+	[SerializeField]
+	private LevelLocker levelLocker;
+
     [SerializeField]
     private LayoutPuzzleButtons layoutPuzzleButtons;
 
@@ -70,6 +73,8 @@ public class LoadPuzzleGame : MonoBehaviour
     {
 
         anims = puzzleGameManager.ResetGamePlay();
+
+		levelLocker.CheckWhichLevelsAreUnlocked(selectedPuzzle);
 
         switch (puzzleLevel)
         {

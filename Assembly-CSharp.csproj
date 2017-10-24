@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\1-Puzzle Menu Controller Scripts\SettingsController.cs" />
      <Compile Include="Assets\Scripts\2-Puzzle Level Controller Scripts\LevelLocker.cs" />
      <Compile Include="Assets\Scripts\2-Puzzle Level Controller Scripts\SelectLevel.cs" />
+     <Compile Include="Assets\Scripts\2-Puzzle Level Controller Scripts\StarsLocker.cs" />
      <Compile Include="Assets\Scripts\3-Puzzle Game Controller\CreatePuzzleButtonsAndAnimations.cs" />
      <Compile Include="Assets\Scripts\3-Puzzle Game Controller\GameFinished.cs" />
      <Compile Include="Assets\Scripts\3-Puzzle Game Controller\LayoutPuzzleButtons.cs" />

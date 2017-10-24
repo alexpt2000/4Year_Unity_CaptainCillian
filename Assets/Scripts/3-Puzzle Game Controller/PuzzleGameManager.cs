@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class PuzzleGameManager : MonoBehaviour
 {
+	[SerializeField]
+	private PuzzleGameSaver puzzleGameSaver;
+
     [SerializeField]
     private GameFinished gameFinished;
 
@@ -153,14 +156,17 @@ public class PuzzleGameManager : MonoBehaviour
         if (countTryGuess < howManyGuesses)
         {
             gameFinished.ShowGameFinishedPanel(3);
+			puzzleGameSaver.Save(level, selectedPuzzle, 3);
         }
         else if (countTryGuess < (howManyGuesses + 5))
         {
             gameFinished.ShowGameFinishedPanel(2);
+			puzzleGameSaver.Save(level, selectedPuzzle, 2);
         }
         else
         {
             gameFinished.ShowGameFinishedPanel(1);
+			puzzleGameSaver.Save(level, selectedPuzzle, 1);
         }
 
     }
