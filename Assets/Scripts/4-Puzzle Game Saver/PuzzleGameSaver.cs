@@ -10,13 +10,13 @@ public class PuzzleGameSaver : MonoBehaviour
 
 	private GameData gameData;
 
-	private bool[] candyPuzzleLevels;
-	private bool[] transportPuzzleLevels;
-	private bool[] fruitPuzzleLevels;
+	public bool[] candyPuzzleLevels;
+	public bool[] transportPuzzleLevels;
+	public bool[] fruitPuzzleLevels;
 
-	private int[] candyPuzzleLevelStars;
-	private int[] transportPuzzleLevelStars;
-	private int[] fruitPuzzleLevelStars;
+	public int[] candyPuzzleLevelStars;
+	public int[] transportPuzzleLevelStars;
+	public int[] fruitPuzzleLevelStars;
 
 	private bool isGameStartedForTheFirstTime;
 

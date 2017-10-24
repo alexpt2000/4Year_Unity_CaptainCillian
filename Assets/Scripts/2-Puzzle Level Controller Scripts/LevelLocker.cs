@@ -20,25 +20,122 @@ public class LevelLocker : MonoBehaviour
 	private bool[] transportPuzzleLevels;
 	private bool[] fruitPuzzleLevels;
 
+
+
+	void Awake() {
+		DeactivatePadlocksAndStarHolders();
+	
+	}
+
+	void Start() {
+		GetLevels();
+	}
+
 	public void CheckWhichLevelsAreUnlocked(string selectePuzzle)
 	{
+		DeactivatePadlocksAndStarHolders();
+		GetLevels();
+
+		switch (selectePuzzle)
+		{
+			case "Candy Puzzle":
+
+				for (int i = 0; i < candyPuzzleLevels.Length; i++)
+				{
+					if (candyPuzzleLevels[i])
+					{
+						levelStarsHolders[i].SetActive(true);
+					}else
+					{
+						levelsPadlocks[i].SetActive(true);
+					}
+				}
+
+				break;
+
+
+				case "Transport Puzzle":
+
+				for (int i = 0; i < transportPuzzleLevels.Length; i++)
+				{
+					if (transportPuzzleLevels[i])
+					{
+						levelStarsHolders[i].SetActive(true);
+					}
+					else
+					{
+						levelsPadlocks[i].SetActive(true);
+					}
+				}
+
+				break;
+
+				case "Fruit Puzzle":
+
+				for (int i = 0; i < fruitPuzzleLevels.Length; i++)
+				{
+					if (fruitPuzzleLevels[i])
+					{
+						levelStarsHolders[i].SetActive(true);
+					}
+					else
+					{
+						levelsPadlocks[i].SetActive(true);
+					}
+				}
+
+				break;
+		}
+
 
 
 	}
 
-	void DeactivatePadlocksAndStarHolders() { 
-	
-	
+	void DeactivatePadlocksAndStarHolders()
+	{
+		for (int i = 0; i < levelsPadlocks.Length; i++)
+		{
+			levelStarsHolders[i].SetActive(false);
+			levelsPadlocks[i].SetActive(false);
+
+		}
+
 	}
 
-	void GetLevels() { 
-	
+	void GetLevels()
+	{
+		candyPuzzleLevels = puzzleGameSaver.candyPuzzleLevels;
+		transportPuzzleLevels = puzzleGameSaver.transportPuzzleLevels;
+		fruitPuzzleLevels = puzzleGameSaver.fruitPuzzleLevels;
+
+
 	}
 
 
-	public bool[] GetPuzzleLevels(string selectedPuzzle) {
+	public bool[] GetPuzzleLevels(string selectedPuzzle)
+	{
 
-		return null;
+		switch (selectedPuzzle)
+		{
+			case "Candy Puzzle":
+				return this.candyPuzzleLevels;
+				break;
+
+			case "Transport Puzzle":
+				return this.transportPuzzleLevels;
+				break;
+
+			case "Fruit Puzzle":
+				return this.fruitPuzzleLevels;
+				break;
+
+
+
+			default:
+				return null;
+				break;
+		}
+
 	}
 
 }

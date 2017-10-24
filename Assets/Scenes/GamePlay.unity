@@ -362,6 +362,7 @@ GameObject:
   m_Component:
   - component: {fileID: 62392560}
   - component: {fileID: 62392559}
+  - component: {fileID: 62392561}
   m_Layer: 0
   m_Name: PuzzleLevelContoller
   m_TagString: Untagged
@@ -399,6 +400,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &62392561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 62392558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb76f0f2144a4bbcb30ae9fde5ed12f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleGameSaver: {fileID: 1704414770}
+  levelStarsHolders:
+  - {fileID: 956036649}
+  - {fileID: 762765788}
+  - {fileID: 747690759}
+  - {fileID: 787937848}
+  - {fileID: 1546478805}
+  levelsPadlocks:
+  - {fileID: 1493762828}
+  - {fileID: 272257478}
+  - {fileID: 248369347}
+  - {fileID: 1282605885}
+  - {fileID: 838348939}
 --- !u!1 &101764197
 GameObject:
   m_ObjectHideFlags: 0
@@ -6509,6 +6534,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cd71668edcc4022a611aadb6e686c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  candyPuzzleLevels: 
+  transportPuzzleLevels: 
+  fruitPuzzleLevels: 
+  candyPuzzleLevelStars: 
+  transportPuzzleLevelStars: 
+  fruitPuzzleLevelStars: 
 --- !u!4 &1704414771
 Transform:
   m_ObjectHideFlags: 0
@@ -7052,6 +7083,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   puzzleGameManager: {fileID: 453108204}
   selectLevel: {fileID: 62392559}
+  levelLocker: {fileID: 62392561}
   selectPuzzleMenuPanel: {fileID: 340033285}
   puzzleLevelSelectPanel: {fileID: 710592658}
   selectPuzzleManuAnime: {fileID: 340033289}
