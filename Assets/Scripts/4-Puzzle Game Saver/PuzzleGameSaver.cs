@@ -42,6 +42,18 @@ public class PuzzleGameSaver : MonoBehaviour {
 			{
 
 				gameData.SetCandyPuzzleLevels(candyPuzzleLevels);
+				gameData.SetTransportPuzzleLevels(transportPuzzleLevels);
+				gameData.SetFruitPuzzlePuzzleLevels(fruitPuzzlePuzzleLevels);
+
+				gameData.SetCandyPuzzleLevelStars(candyPuzzleLevelStars);
+				gameData.SetTransportPuzzleLevelStars(transportPuzzleLevelStars);
+				gameData.SetFruitPuzzleLevelStars(fruitPuzzleLevelStars);
+
+				gameData.SetIsGameStartedForTheFirstTime(isGameStartedForTheFirstTime);
+				gameData.SetMusicVolume(musicVolume);
+
+				bf.Serialize(file, gameData);
+
 
 
 
@@ -54,12 +66,61 @@ public class PuzzleGameSaver : MonoBehaviour {
 		{
 
 		}
+		finally { 
+		
+			if (file != null)
+			{
+				file.Close();
+
+			}
+		
+		}
 
 	}
 
 
-	void LoadGameData() { 
-	
+	void LoadGameData() {
+
+		FileStream file = null;
+
+		try
+		{
+			BinaryFormatter bf = new BinaryFormatter();
+
+			file = File.Open(Application.persistentDataPath + "/GameData.dat", FileMode.Open);
+
+			gameData = (GameData)bf.Deserialize(file);
+
+			if (gameData != null)
+			{
+				candyPuzzleLevels = gameData.GetCandyPuzzleLevels();
+				transportPuzzleLevels = gameData.GetTransportPuzzleLevels();
+				fruitPuzzlePuzzleLevels = gameData.GetFruitPuzzlePuzzleLevels();
+
+				candyPuzzleLevelStars = gameData.GetCandyPuzzleLevelStars();
+				transportPuzzleLevelStars = gameData.GetTransportPuzzleLevelStars();
+				fruitPuzzleLevelStars = gameData.GetFruitPuzzleLevelStars();
+
+
+				musicVolume = gameData.GetMusicVolume();
+
+			}
+		}
+		catch (Exception e)
+		{
+
+		}
+		finally
+		{
+
+			if (file != null)
+			{
+				file.Close();
+
+			}
+
+		}
+
 	}
 
 	public void Save(int level, string selectedPuzzle, int stars) { 
