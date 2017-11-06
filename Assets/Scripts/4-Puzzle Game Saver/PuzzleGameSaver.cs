@@ -96,7 +96,7 @@ public class PuzzleGameSaver : MonoBehaviour
 
 	}
 
-	void SaveGameData()
+	public void SaveGameData()
 	{
 
 

@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\3-Puzzle Game Controller\SetupPuzzleGame.cs" />
     <Compile Include="Assets\Scripts\4-Puzzle Game Saver\GameData.cs" />
     <Compile Include="Assets\Scripts\4-Puzzle Game Saver\PuzzleGameSaver.cs" />
+    <Compile Include="Assets\Scripts\5-Puzzle Music Controller\MusicController.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
