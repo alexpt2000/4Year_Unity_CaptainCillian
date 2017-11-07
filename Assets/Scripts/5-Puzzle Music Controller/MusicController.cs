@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class MusicController : MonoBehaviour {
 
     [SerializeField]
@@ -12,7 +13,7 @@ public class MusicController : MonoBehaviour {
     private float musicVolume;
 
     void Awake() {
-        etAudioSource();
+        GetAudioSource();
     }
 
 	// Use this for initialization
@@ -24,7 +25,8 @@ public class MusicController : MonoBehaviour {
 	
 
 	void GetAudioSource () {
-        bgMusicClip = GetAudioSource<AudioSource>();
+        //bgMusicClip = GetAudioSource<AudioSource>();
+        bgMusicClip = GetComponent<AudioSource>();
 
     }
 
@@ -40,7 +42,7 @@ public class MusicController : MonoBehaviour {
         {
             if (!bgMusicClip.isPlaying)
             {
-                bgMusicClip.Play;
+                bgMusicClip.Play();
             }
 
             puzzleGameSaver.musicVolume = musicVolume;
@@ -58,5 +60,9 @@ public class MusicController : MonoBehaviour {
             puzzleGameSaver.SaveGameData();
 
         }
+    }
+
+    public float GetMusicVolume() {
+        return this.musicVolume;
     }
 }

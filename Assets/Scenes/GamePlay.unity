@@ -772,7 +772,18 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1813311980}
+        m_MethodName: GetVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &227252633
@@ -1990,7 +2001,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 8, y: 57}
+  m_AnchoredPosition: {x: 250, y: 57}
   m_SizeDelta: {x: 219, y: 260}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &406869011
@@ -2043,6 +2054,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1813311980}
+        m_MethodName: CloseSettingsPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &406869012
@@ -2064,7 +2086,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300012, guid: 94baae43b0c9c41f6b0a2fda56ecfb17, type: 3}
+  m_Sprite: {fileID: 21300010, guid: 94baae43b0c9c41f6b0a2fda56ecfb17, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3313,8 +3335,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1410, y: 794}
+  m_AnchoredPosition: {x: 0, y: 23}
+  m_SizeDelta: {x: 1554.5, y: 1040.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &742449968
 MonoBehaviour:
@@ -3335,9 +3357,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 58bb3e6da29504d29ac3e561703c1cfe, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5060134e4e0c1d848a33cfb8a58a485e, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -4380,8 +4402,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -60.9, y: 22.7}
-  m_SizeDelta: {x: 133, y: 130}
+  m_AnchoredPosition: {x: -48, y: 7.9}
+  m_SizeDelta: {x: 107.4, y: 100.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1044551339
 MonoBehaviour:
@@ -4404,7 +4426,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300014, guid: 94baae43b0c9c41f6b0a2fda56ecfb17, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -4450,7 +4472,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -390, y: 57}
+  m_AnchoredPosition: {x: -13, y: 57}
   m_SizeDelta: {x: 219, y: 260}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1050326248
@@ -4503,6 +4525,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1813311980}
+        m_MethodName: CloseSettingsPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1050326249
@@ -4524,7 +4557,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300012, guid: 94baae43b0c9c41f6b0a2fda56ecfb17, type: 3}
+  m_Sprite: {fileID: 21300010, guid: 94baae43b0c9c41f6b0a2fda56ecfb17, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6580,6 +6613,7 @@ MonoBehaviour:
   candyPuzzleLevelStars: 
   transportPuzzleLevelStars: 
   fruitPuzzleLevelStars: 
+  musicVolume: 0
 --- !u!4 &1704414771
 Transform:
   m_ObjectHideFlags: 0
@@ -6918,7 +6952,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 389.9998, y: 57}
+  m_AnchoredPosition: {x: 513.6999, y: 57}
   m_SizeDelta: {x: 219, y: 260}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1763008321
@@ -6971,6 +7005,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1813311980}
+        m_MethodName: CloseSettingsPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1763008322
@@ -6992,7 +7037,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300012, guid: 94baae43b0c9c41f6b0a2fda56ecfb17, type: 3}
+  m_Sprite: {fileID: 21300010, guid: 94baae43b0c9c41f6b0a2fda56ecfb17, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7108,8 +7153,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e571feeae65664ca0a7831d41505ab9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicController: {fileID: 2081911093}
   settingsPanel: {fileID: 1857289659}
   settingsPanelAnime: {fileID: 1857289663}
+  slider: {fileID: 216692268}
 --- !u!114 &1813311981
 MonoBehaviour:
   m_ObjectHideFlags: 0

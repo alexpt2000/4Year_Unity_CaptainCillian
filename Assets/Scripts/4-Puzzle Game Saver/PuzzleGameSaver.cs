@@ -20,7 +20,7 @@ public class PuzzleGameSaver : MonoBehaviour
 
 	private bool isGameStartedForTheFirstTime;
 
-	private float musicVolume;
+	public float musicVolume;
 
 	void Awake() {
 		InitializeGame();

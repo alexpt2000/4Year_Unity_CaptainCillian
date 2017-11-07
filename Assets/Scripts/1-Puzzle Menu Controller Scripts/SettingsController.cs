@@ -1,19 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SettingsController : MonoBehaviour {
 
+    [SerializeField]
+    private MusicController musicController;
 
-	[SerializeField]
+    [SerializeField]
 	private GameObject settingsPanel;
 
 	[SerializeField]
 	private Animator settingsPanelAnime;
 
+    [SerializeField]
+    private Slider slider;
 
-	public void OpenSettingsPanel(){
-
+    public void OpenSettingsPanel(){
+        slider.value = musicController.GetMusicVolume();
 		settingsPanel.SetActive(true);
 		settingsPanelAnime.Play("SlideIn");
 	
@@ -32,5 +37,9 @@ public class SettingsController : MonoBehaviour {
         yield return new WaitForSeconds(1f);
         settingsPanel.SetActive(false);
 
+    }
+
+    public void GetVolume(float volume) {
+        musicController.SetMusicVolume(volume);
     }
 }
