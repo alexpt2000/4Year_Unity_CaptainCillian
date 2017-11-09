@@ -6613,7 +6613,7 @@ MonoBehaviour:
   candyPuzzleLevelStars: 
   transportPuzzleLevelStars: 
   fruitPuzzleLevelStars: 
-  musicVolume: 0
+  musicVolume: 1
 --- !u!4 &1704414771
 Transform:
   m_ObjectHideFlags: 0

@@ -5,7 +5,7 @@ using System.IO;
 using System;
 using System.Runtime.Serialization.Formatters.Binary;
 
-[SerializeField]
+[Serializable]
 public class GameData
 {
 

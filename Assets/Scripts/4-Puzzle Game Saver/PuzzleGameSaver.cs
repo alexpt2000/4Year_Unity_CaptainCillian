@@ -89,7 +89,7 @@ public class PuzzleGameSaver : MonoBehaviour
 			gameData.SetMusicVolume(musicVolume);
 
 			SaveGameData();
-			LoadGameData();
+			//LoadGameData();
 
 		}
 
@@ -109,7 +109,9 @@ public class PuzzleGameSaver : MonoBehaviour
 
 			file = File.Create(Application.persistentDataPath + "/GameData.dat");
 
-			if (gameData != null)
+            Debug.Log("Save the Game");
+
+            if (gameData != null)
 			{
 
 				gameData.SetCandyPuzzleLevels(candyPuzzleLevels);
@@ -164,7 +166,11 @@ public class PuzzleGameSaver : MonoBehaviour
 
 			gameData = (GameData)bf.Deserialize(file);
 
-			if (gameData != null)
+            Debug.Log("Load the Game");
+
+
+
+            if (gameData != null)
 			{
 				candyPuzzleLevels = gameData.GetCandyPuzzleLevels();
 				transportPuzzleLevels = gameData.GetTransportPuzzleLevels();
