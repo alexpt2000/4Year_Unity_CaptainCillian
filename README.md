@@ -1,9 +1,15 @@
-git init
+# Mobile Applications Project
 
-git add .
+![Screencast](Screencast/screencastPuzzle.gif)
 
-git commit -m "first commit"
 
-git remote add origin https://github.com/alexpt2000gmit/4Year_Unity_CaptainCillian.git
+# Author
+### Alexander Souza
+- G00317835@gmit.ie
+- alexpt2000@gmail.com
+- https://github.com/alexpt2000gmit
+- https://github.com/alexpt2000
+- www.linkedin.com/in/alexander-souza-3a841539/
 
-git push -u origin master
+
+
