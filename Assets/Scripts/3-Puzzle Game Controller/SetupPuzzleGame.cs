@@ -26,7 +26,8 @@ public class SetupPuzzleGame : MonoBehaviour
 
     void Awake()
     {
-        candyPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Candy");
+        //candyPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Candy");
+        candyPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Friends");
         transportPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Transport");
         fruitPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Fruits");
 
