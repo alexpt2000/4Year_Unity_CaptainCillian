@@ -1,6 +1,6 @@
 # Mobile Applications Project
 
-![Screencast](Screencast/screencastPuzzle.gif)
+![Screencast](Screencast/screencastPuzzle1.gif)
 
 
 # Author
