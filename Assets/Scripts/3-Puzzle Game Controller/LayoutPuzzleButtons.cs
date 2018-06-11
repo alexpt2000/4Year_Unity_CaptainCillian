@@ -51,15 +51,15 @@ public class LayoutPuzzleButtons : MonoBehaviour
                         btn.gameObject.transform.SetParent(puzzleLevel1, false);
                         btn.GetComponentInChildren<Text>().text = "";
 
-                        if (selectedPuzzle == "Candy Puzzle")
+                        if (selectedPuzzle == "Game1 Puzzle")
                         {
                             btn.image.sprite = puzzleButtonsBacksideImages[0];
                         }
-                        else if (selectedPuzzle == "Transport Puzzle")
+                        else if (selectedPuzzle == "Game2 Puzzle")
                         {
                             btn.image.sprite = puzzleButtonsBacksideImages[1];
                         }
-                        else if (selectedPuzzle == "Fruit Puzzle")
+                        else if (selectedPuzzle == "Game3 Puzzle")
                         {
                             btn.image.sprite = puzzleButtonsBacksideImages[2];
                         }
@@ -81,15 +81,15 @@ public class LayoutPuzzleButtons : MonoBehaviour
                         btn.gameObject.transform.SetParent(puzzleLevel2, false);
                         btn.GetComponentInChildren<Text>().text = "";
 
-                        if (selectedPuzzle == "Candy Puzzle")
+                        if (selectedPuzzle == "Game1 Puzzle")
                         {
                             btn.image.sprite = puzzleButtonsBacksideImages[0];
                         }
-                        else if (selectedPuzzle == "Transport Puzzle")
+                        else if (selectedPuzzle == "Game2 Puzzle")
                         {
                             btn.image.sprite = puzzleButtonsBacksideImages[1];
                         }
-                        else if (selectedPuzzle == "Fruit Puzzle")
+                        else if (selectedPuzzle == "Game3 Puzzle")
                         {
                             btn.image.sprite = puzzleButtonsBacksideImages[2];
                         }
@@ -109,15 +109,15 @@ public class LayoutPuzzleButtons : MonoBehaviour
                         btn.gameObject.transform.SetParent(puzzleLevel3, false);
                         btn.GetComponentInChildren<Text>().text = "";
 
-                        if (selectedPuzzle == "Candy Puzzle")
+                        if (selectedPuzzle == "Game1 Puzzle")
                         {
                             btn.image.sprite = puzzleButtonsBacksideImages[0];
                         }
-                        else if (selectedPuzzle == "Transport Puzzle")
+                        else if (selectedPuzzle == "Game2 Puzzle")
                         {
                             btn.image.sprite = puzzleButtonsBacksideImages[1];
                         }
-                        else if (selectedPuzzle == "Fruit Puzzle")
+                        else if (selectedPuzzle == "Game3 Puzzle")
                         {
                             btn.image.sprite = puzzleButtonsBacksideImages[2];
                         }
@@ -136,15 +136,15 @@ public class LayoutPuzzleButtons : MonoBehaviour
                         btn.gameObject.transform.SetParent(puzzleLevel4, false);
                         btn.GetComponentInChildren<Text>().text = "";
 
-                        if (selectedPuzzle == "Candy Puzzle")
+                        if (selectedPuzzle == "Game1 Puzzle")
                         {
                             btn.image.sprite = puzzleButtonsBacksideImages[0];
                         }
-                        else if (selectedPuzzle == "Transport Puzzle")
+                        else if (selectedPuzzle == "Game2 Puzzle")
                         {
                             btn.image.sprite = puzzleButtonsBacksideImages[1];
                         }
-                        else if (selectedPuzzle == "Fruit Puzzle")
+                        else if (selectedPuzzle == "Game3 Puzzle")
                         {
                             btn.image.sprite = puzzleButtonsBacksideImages[2];
                         }
@@ -163,15 +163,15 @@ public class LayoutPuzzleButtons : MonoBehaviour
                         btn.gameObject.transform.SetParent(puzzleLevel5, false);
                         btn.GetComponentInChildren<Text>().text = "";
 
-                        if (selectedPuzzle == "Candy Puzzle")
+                        if (selectedPuzzle == "Game1 Puzzle")
                         {
                             btn.image.sprite = puzzleButtonsBacksideImages[0];
                         }
-                        else if (selectedPuzzle == "Transport Puzzle")
+                        else if (selectedPuzzle == "Game2 Puzzle")
                         {
                             btn.image.sprite = puzzleButtonsBacksideImages[1];
                         }
-                        else if (selectedPuzzle == "Fruit Puzzle")
+                        else if (selectedPuzzle == "Game3 Puzzle")
                         {
                             btn.image.sprite = puzzleButtonsBacksideImages[2];
                         }

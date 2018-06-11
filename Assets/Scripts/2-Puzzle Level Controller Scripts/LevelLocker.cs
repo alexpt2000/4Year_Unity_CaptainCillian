@@ -19,9 +19,9 @@ public class LevelLocker : MonoBehaviour
 	private GameObject[] levelsPadlocks;
 
 
-	private bool[] candyPuzzleLevels;
-	private bool[] transportPuzzleLevels;
-	private bool[] fruitPuzzleLevels;
+	private bool[] game1PuzzleLevels;
+	private bool[] game2PuzzleLevels;
+	private bool[] game3PuzzleLevels;
 
 
 
@@ -41,11 +41,11 @@ public class LevelLocker : MonoBehaviour
 
 		switch (selectePuzzle)
 		{
-			case "Candy Puzzle":
+			case "Game1 Puzzle":
 
-				for (int i = 0; i < candyPuzzleLevels.Length; i++)
+				for (int i = 0; i < game1PuzzleLevels.Length; i++)
 				{
-					if (candyPuzzleLevels[i])
+					if (game1PuzzleLevels[i])
 					{
 						levelStarsHolders[i].SetActive(true);
 						starsLocker.ActivateStars(i, selectePuzzle);
@@ -58,11 +58,11 @@ public class LevelLocker : MonoBehaviour
 				break;
 
 
-				case "Transport Puzzle":
+				case "Game2 Puzzle":
 
-				for (int i = 0; i < transportPuzzleLevels.Length; i++)
+				for (int i = 0; i < game2PuzzleLevels.Length; i++)
 				{
-					if (transportPuzzleLevels[i])
+					if (game2PuzzleLevels[i])
 					{
 						levelStarsHolders[i].SetActive(true);
 						starsLocker.ActivateStars(i, selectePuzzle);
@@ -75,11 +75,11 @@ public class LevelLocker : MonoBehaviour
 
 				break;
 
-				case "Fruit Puzzle":
+				case "Game3 Puzzle":
 
-				for (int i = 0; i < fruitPuzzleLevels.Length; i++)
+				for (int i = 0; i < game3PuzzleLevels.Length; i++)
 				{
-					if (fruitPuzzleLevels[i])
+					if (game3PuzzleLevels[i])
 					{
 						levelStarsHolders[i].SetActive(true);
 						starsLocker.ActivateStars(i, selectePuzzle);
@@ -110,9 +110,9 @@ public class LevelLocker : MonoBehaviour
 
 	void GetLevels()
 	{
-		candyPuzzleLevels = puzzleGameSaver.candyPuzzleLevels;
-		transportPuzzleLevels = puzzleGameSaver.transportPuzzleLevels;
-		fruitPuzzleLevels = puzzleGameSaver.fruitPuzzleLevels;
+        game1PuzzleLevels = puzzleGameSaver.game1PuzzleLevels;
+        game2PuzzleLevels = puzzleGameSaver.game2PuzzleLevels;
+        game3PuzzleLevels = puzzleGameSaver.game3PuzzleLevels;
 
 
 	}
@@ -123,16 +123,16 @@ public class LevelLocker : MonoBehaviour
 
 		switch (selectedPuzzle)
 		{
-			case "Candy Puzzle":
-				return this.candyPuzzleLevels;
+			case "Game1 Puzzle":
+				return this.game1PuzzleLevels;
 				break;
 
-			case "Transport Puzzle":
-				return this.transportPuzzleLevels;
+			case "Game2 Puzzle":
+				return this.game2PuzzleLevels;
 				break;
 
-			case "Fruit Puzzle":
-				return this.fruitPuzzleLevels;
+			case "Game3 Puzzle":
+				return this.game3PuzzleLevels;
 				break;
 
 

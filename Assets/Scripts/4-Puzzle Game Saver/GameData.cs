@@ -9,79 +9,79 @@ using System.Runtime.Serialization.Formatters.Binary;
 public class GameData
 {
 
-	private bool[] candyPuzzleLevels;
-	private bool[] transportPuzzleLevels;
-	private bool[] fruitPuzzlePuzzleLevels;
+	private bool[] game1PuzzleLevels;
+    private bool[] game2PuzzleLevels;
+	private bool[] game3PuzzleLevels;
 
-	private int[] candyPuzzleLevelStars;
-	private int[] transportPuzzleLevelStars;
-	private int[] fruitPuzzleLevelStars;
+	private int[] game1PuzzleLevelStars;
+	private int[] game2PuzzleLevelStars;
+	private int[] game3PuzzleLevelStars;
 
 	private bool isGameStartedForTheFirstTime;
 
 	private float musicVolume;
 
 
-	public void SetCandyPuzzleLevels(bool[] candyPuzzleLevels)
+	public void SetGame1PuzzleLevels(bool[] game1PuzzleLevels)
 	{
-		this.candyPuzzleLevels = candyPuzzleLevels;
+		this.game1PuzzleLevels = game1PuzzleLevels;
 	}
 
-	public bool[] GetCandyPuzzleLevels()
+	public bool[] GetGame1PuzzleLevels()
 	{
-		return candyPuzzleLevels;
+		return game1PuzzleLevels;
 	}
 
-	public void SetTransportPuzzleLevels(bool[] transportPuzzleLevels)
+	public void SetGame2PuzzleLevels(bool[] game2PuzzleLevels)
 	{
-		this.transportPuzzleLevels = transportPuzzleLevels;
+        this.game2PuzzleLevels = game2PuzzleLevels;
 	}
 
-	public bool[] GetTransportPuzzleLevels()
+	public bool[] GetGame2PuzzleLevels()
 	{
-		return transportPuzzleLevels;
+        return game2PuzzleLevels;
 	}
 
-	public void SetFruitPuzzlePuzzleLevels(bool[] fruitPuzzlePuzzleLevels)
+	public void SetGame3PuzzlePuzzleLevels(bool[] game3PuzzleLevels)
 	{
-		this.fruitPuzzlePuzzleLevels = fruitPuzzlePuzzleLevels;
+		this.game3PuzzleLevels = game3PuzzleLevels;
 	}
 
-	public bool[] GetFruitPuzzlePuzzleLevels()
+	public bool[] GetGame3PuzzlePuzzleLevels()
 	{
-		return fruitPuzzlePuzzleLevels;
+		return game3PuzzleLevels;
 	}
 
 
-	public void SetCandyPuzzleLevelStars(int[] candyPuzzleLevelStars)
+	public void SetCandyPuzzleLevelStars(int[] game1PuzzleLevelStars)
 	{
-		this.candyPuzzleLevelStars = candyPuzzleLevelStars;
+		this.game1PuzzleLevelStars = game1PuzzleLevelStars;
 	}
 
 	public int[] GetCandyPuzzleLevelStars()
 	{
-		return candyPuzzleLevelStars;
+		return game1PuzzleLevelStars;
 	}
 
 
-	public void SetTransportPuzzleLevelStars(int[] transportPuzzleLevelStars)
+	public void SetTransportPuzzleLevelStars(int[] game2PuzzleLevelStars)
 	{
-		this.transportPuzzleLevelStars = transportPuzzleLevelStars;
+		this.game2PuzzleLevelStars = game2PuzzleLevelStars;
 	}
 
 	public int[] GetTransportPuzzleLevelStars()
 	{
-		return transportPuzzleLevelStars;
+		return game2PuzzleLevelStars;
 	}
 
-	public void SetFruitPuzzleLevelStars(int[] fruitPuzzleLevelStars)
+	public void SetFruitPuzzleLevelStars(int[] game3PuzzleLevelStars)
 	{
-		this.fruitPuzzleLevelStars = fruitPuzzleLevelStars;
+		this.game3PuzzleLevelStars = game3PuzzleLevelStars;
 	}
 
 	public int[] GetFruitPuzzleLevelStars()
 	{
-		return fruitPuzzleLevelStars;
+		return game3PuzzleLevelStars;
 	}
 
 

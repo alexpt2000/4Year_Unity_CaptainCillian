@@ -11,9 +11,9 @@ public class StarsLocker : MonoBehaviour
 	[SerializeField]
 	private GameObject[] level1Stars, level2Stars, level3Stars, level4Stars, level5Stars;
 
-	public int[] candyPuzzleLevelStars;
-	public int[] transportPuzzleLevelStars;
-	public int[] fruitPuzzleLevelStars;
+	public int[] game1PuzzleLevelStars;
+	public int[] game2PuzzleLevelStars;
+	public int[] game3PuzzleLevelStars;
 
 	void Awake()
 	{
@@ -35,23 +35,23 @@ public class StarsLocker : MonoBehaviour
 
 		switch (selectedPuzzle)
 		{
-			case "Candy Puzzle":
+			case "Game1 Puzzle":
 
-				stars = candyPuzzleLevelStars[level];
+				stars = game1PuzzleLevelStars[level];
 				ActivateLevelStars(level, stars);
 
 				break;
 
-			case "Transport Puzzle":
+			case "Game2 Puzzle":
 
-				stars = transportPuzzleLevelStars[level];
+				stars = game2PuzzleLevelStars[level];
 				ActivateLevelStars(level, stars);
 
 				break;
 
-			case "Fruit Puzzle":
+			case "Game3 Puzzle":
 
-				stars = fruitPuzzleLevelStars[level];
+				stars = game3PuzzleLevelStars[level];
 				ActivateLevelStars(level, stars);
 
 				break;
@@ -146,9 +146,9 @@ public class StarsLocker : MonoBehaviour
 	void GetStars()
 	{
 
-		candyPuzzleLevelStars = puzzleGameSaver.candyPuzzleLevelStars;
-		transportPuzzleLevelStars = puzzleGameSaver.transportPuzzleLevelStars;
-		fruitPuzzleLevelStars = puzzleGameSaver.fruitPuzzleLevelStars;
+		game1PuzzleLevelStars = puzzleGameSaver.game1PuzzleLevelStars;
+        game2PuzzleLevelStars = puzzleGameSaver.game2PuzzleLevelStars;
+        game3PuzzleLevelStars = puzzleGameSaver.game3PuzzleLevelStars;
 
 	}
 }

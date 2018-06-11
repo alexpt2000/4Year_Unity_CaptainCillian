@@ -9,7 +9,7 @@ public class SetupPuzzleGame : MonoBehaviour
     [SerializeField]
     private PuzzleGameManager puzzleGameManager;
 
-    private Sprite[] candyPuzzleSprites, transportPuzzleSprites, fruitPuzzleSprites;
+    private Sprite[] game1PuzzleSprites, game2PuzzleSprites, game3PuzzleSprites;
 
     
     private List<Sprite> gamePuzzles = new List<Sprite>();
@@ -27,11 +27,13 @@ public class SetupPuzzleGame : MonoBehaviour
     void Awake()
     {
         //candyPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Candy");
-        candyPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Friends");
-        transportPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Transport");
-        fruitPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Fruits");
+        //transportPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Transport");
 
-        //fruitPuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Game Assets/Fruits");
+        game1PuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Friends");
+        game2PuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Various");
+        game3PuzzleSprites = Resources.LoadAll<Sprite>("Sprites/Fruits");
+
+   
     }
 
     void PrepareGameSprites()
@@ -77,7 +79,7 @@ public class SetupPuzzleGame : MonoBehaviour
                         index = 0;
 
                     }
-                    gamePuzzles.Add(candyPuzzleSprites[index]);
+                    gamePuzzles.Add(game1PuzzleSprites[index]);
                     index++;
                 }
                 break;
@@ -92,7 +94,7 @@ public class SetupPuzzleGame : MonoBehaviour
                         index = 0;
 
                     }
-                    gamePuzzles.Add(transportPuzzleSprites[index]);
+                    gamePuzzles.Add(game2PuzzleSprites[index]);
                     index++;
                 }
                 break;
@@ -108,7 +110,7 @@ public class SetupPuzzleGame : MonoBehaviour
                         index = 0;
 
                     }
-                    gamePuzzles.Add(fruitPuzzleSprites[index]);
+                    gamePuzzles.Add(game3PuzzleSprites[index]);
                     index++;
                 }
                 break;
