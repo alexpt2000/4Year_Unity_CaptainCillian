@@ -89,7 +89,8 @@ public class PuzzleGameSaver : MonoBehaviour
 			gameData.SetMusicVolume(musicVolume);
 
 			SaveGameData();
-			//LoadGameData();
+
+			LoadGameData();
 
 		}
 
@@ -107,7 +108,7 @@ public class PuzzleGameSaver : MonoBehaviour
 
 			BinaryFormatter bf = new BinaryFormatter();
 
-			file = File.Create(Application.persistentDataPath + "/CaptainCillian.dat");
+			file = File.Create(Application.persistentDataPath + "/GameData.dat");
 
             Debug.Log("Save the Game");
 
@@ -162,7 +163,7 @@ public class PuzzleGameSaver : MonoBehaviour
 		{
 			BinaryFormatter bf = new BinaryFormatter();
 
-			file = File.Open(Application.persistentDataPath + "/CaptainCillian.dat", FileMode.Open);
+			file = File.Open(Application.persistentDataPath + "/GameData.dat", FileMode.Open);
 
 			gameData = (GameData)bf.Deserialize(file);
 
@@ -204,8 +205,9 @@ public class PuzzleGameSaver : MonoBehaviour
 
 	public void Save(int level, string selectedPuzzle, int stars)
 	{
+        
 
-		int unlockNextLevel = -1;
+        int unlockNextLevel = -1;
 
 		switch (selectedPuzzle)
 		{
@@ -249,5 +251,7 @@ public class PuzzleGameSaver : MonoBehaviour
 				break;
 		}
 
-	}
+        SaveGameData();
+
+    }
 }

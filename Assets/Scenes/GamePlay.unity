@@ -459,9 +459,9 @@ MonoBehaviour:
   - {fileID: 1705878105}
   - {fileID: 1136575525}
   - {fileID: 341643503}
-  candyPuzzleLevelStars: 
-  transportPuzzleLevelStars: 
-  fruitPuzzleLevelStars: 
+  game1PuzzleLevelStars: 
+  game2PuzzleLevelStars: 
+  game3PuzzleLevelStars: 
 --- !u!1 &101764197
 GameObject:
   m_ObjectHideFlags: 0
@@ -2001,7 +2001,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 287, y: -73}
+  m_AnchoredPosition: {x: 447.99, y: -83.96701}
   m_SizeDelta: {x: 220, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &406869011
@@ -2086,7 +2086,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ee25025e645b84b408254bc41ecb60ee, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bdf6b7d0ae389574c9bdd9eeaee84652, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3335,8 +3335,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.7, y: 6.8}
-  m_SizeDelta: {x: 1310.6, y: 817.1}
+  m_AnchoredPosition: {x: 72.04997, y: -0.5}
+  m_SizeDelta: {x: 1424.1, y: 1035.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &742449968
 MonoBehaviour:
@@ -4424,7 +4424,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300014, guid: 94baae43b0c9c41f6b0a2fda56ecfb17, type: 3}
+  m_Sprite: {fileID: 21300332, guid: 3db556804419e054f89bfe74aff71b14, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -4472,7 +4472,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 50, y: -73}
+  m_AnchoredPosition: {x: 195, y: -88.2}
   m_SizeDelta: {x: 220, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1050326248
@@ -4619,9 +4619,9 @@ MonoBehaviour:
   m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 1280, y: 720}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0.5
+  m_ReferenceResolution: {x: 1280, y: 700}
+  m_ScreenMatchMode: 1
+  m_MatchWidthOrHeight: 0.251
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -6607,12 +6607,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cd71668edcc4022a611aadb6e686c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  candyPuzzleLevels: 
-  transportPuzzleLevels: 
-  fruitPuzzleLevels: 
-  candyPuzzleLevelStars: 
-  transportPuzzleLevelStars: 
-  fruitPuzzleLevelStars: 
+  game1PuzzleLevels: 
+  game2PuzzleLevels: 
+  game3PuzzleLevels: 
+  game1PuzzleLevelStars: 
+  game2PuzzleLevelStars: 
+  game3PuzzleLevelStars: 
   musicVolume: 1
 --- !u!4 &1704414771
 Transform:
@@ -6935,7 +6935,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1763008320
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6952,7 +6952,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 520.6999, y: -72.999985}
+  m_AnchoredPosition: {x: -44, y: 254}
   m_SizeDelta: {x: 220, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1763008321
