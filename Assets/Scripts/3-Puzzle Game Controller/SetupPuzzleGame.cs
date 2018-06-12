@@ -69,7 +69,7 @@ public class SetupPuzzleGame : MonoBehaviour
 
         switch (selectedPuzzle)
         {
-            case "Candy Puzzle":
+            case "Game1 Puzzle":
 
                 for (int i = 0; i < looper; i++)
                 {
@@ -84,7 +84,7 @@ public class SetupPuzzleGame : MonoBehaviour
                 }
                 break;
 
-            case "Transport Puzzle":
+            case "Game2 Puzzle":
 
                 for (int i = 0; i < looper; i++)
                 {
@@ -100,7 +100,7 @@ public class SetupPuzzleGame : MonoBehaviour
                 break;
 
 
-            case "Fruit Puzzle":
+            case "Game3 Puzzle":
 
                 for (int i = 0; i < looper; i++)
                 {

@@ -42,44 +42,44 @@ public class GameData
         return game2PuzzleLevels;
 	}
 
-	public void SetGame3PuzzlePuzzleLevels(bool[] game3PuzzleLevels)
+	public void SetGame3PuzzleLevels(bool[] game3PuzzleLevels)
 	{
 		this.game3PuzzleLevels = game3PuzzleLevels;
 	}
 
-	public bool[] GetGame3PuzzlePuzzleLevels()
+	public bool[] GetGame3PuzzleLevels()
 	{
 		return game3PuzzleLevels;
 	}
 
 
-	public void SetCandyPuzzleLevelStars(int[] game1PuzzleLevelStars)
+	public void SetGame1PuzzleLevelStars(int[] game1PuzzleLevelStars)
 	{
 		this.game1PuzzleLevelStars = game1PuzzleLevelStars;
 	}
 
-	public int[] GetCandyPuzzleLevelStars()
+	public int[] GetGame1PuzzleLevelStars()
 	{
 		return game1PuzzleLevelStars;
 	}
 
 
-	public void SetTransportPuzzleLevelStars(int[] game2PuzzleLevelStars)
+	public void SetGame2PuzzleLevelStars(int[] game2PuzzleLevelStars)
 	{
 		this.game2PuzzleLevelStars = game2PuzzleLevelStars;
 	}
 
-	public int[] GetTransportPuzzleLevelStars()
+	public int[] GetGame2PuzzleLevelStars()
 	{
 		return game2PuzzleLevelStars;
 	}
 
-	public void SetFruitPuzzleLevelStars(int[] game3PuzzleLevelStars)
+	public void SetGame3PuzzleLevelStars(int[] game3PuzzleLevelStars)
 	{
 		this.game3PuzzleLevelStars = game3PuzzleLevelStars;
 	}
 
-	public int[] GetFruitPuzzleLevelStars()
+	public int[] GetGame3PuzzleLevelStars()
 	{
 		return game3PuzzleLevelStars;
 	}

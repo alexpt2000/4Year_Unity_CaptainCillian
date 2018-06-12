@@ -53,7 +53,7 @@ public class PuzzleGameSaver : MonoBehaviour
             game2PuzzleLevels[0] = true;
             game3PuzzleLevels[0] = true;
 
-			for (int i = 1; i < candyPuzzleLevels.Length; i++)
+			for (int i = 1; i < game1PuzzleLevels.Length; i++)
 			{
                 game1PuzzleLevels[i] = false;
                 game2PuzzleLevels[i] = false;
@@ -68,9 +68,9 @@ public class PuzzleGameSaver : MonoBehaviour
 
 			for (int i = 0; i < game1PuzzleLevelStars.Length; i++)
 			{
-				candyPuzzleLevelStars[i] = 0;
-				transportPuzzleLevelStars[i] = 0;
-				fruitPuzzleLevelStars[i] = 0;
+				game1PuzzleLevelStars[i] = 0;
+				game2PuzzleLevelStars[i] = 0;
+				game3PuzzleLevelStars[i] = 0;
 
 			}
 
@@ -107,7 +107,7 @@ public class PuzzleGameSaver : MonoBehaviour
 
 			BinaryFormatter bf = new BinaryFormatter();
 
-			file = File.Create(Application.persistentDataPath + "/GameData.dat");
+			file = File.Create(Application.persistentDataPath + "/CaptainCillian.dat");
 
             Debug.Log("Save the Game");
 
@@ -174,7 +174,7 @@ public class PuzzleGameSaver : MonoBehaviour
 			{
 				game1PuzzleLevels = gameData.GetGame1PuzzleLevels();
                 game2PuzzleLevels = gameData.GetGame2PuzzleLevels();
-                game3PuzzleLevels = gameData.GetGame3PuzzlePuzzleLevels();
+                game3PuzzleLevels = gameData.GetGame3PuzzleLevels();
 
                 game1PuzzleLevelStars = gameData.GetGame1PuzzleLevelStars();
                 game2PuzzleLevelStars = gameData.GetGame2PuzzleLevelStars();
